@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar JQuery</title>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div><h1>Lista de Nomes</h1></div>
+    <div>
+        <ul style="font-size: 35px;">
+        <li class="m">Maria</li>
+        <li class="a">Marta</li>
+        <li class="r">Marcos</li>
+        <li class="l">Aline</li>
+        <li class="d">Adriana</li>
+    </ul>
+    </div>
+
+    <div>
+        <button id="btn">Clique Aqui</button>
+    </div>
+    <!-- <script>
+        $('h1').fadeOut("2000") // Sair da tela por 2 segundos
+    </script> -->
+
+    <!-- <script>
+        $('h1').fadeOut("2000").fadeIn("2000") 
+    </script> -->
+
+    <!-- <script>
+        $('li').remove()
+    </script> -->
+
+     <!-- <script>
+        $('h1').append(" de pessoas")
+     </script> -->
+
+    <!-- <script>
+        $('#btn').on("click",botao) // Ao clicar no botão sumira a lista de nomes
+        function botao()
+    {
+        $('h1').remove()
+    }
+    </script> -->
+
+    <script>
+        $('#btn').on("click", botao) // Ao clicar no botão a lista ficara azul
+    function botao()
+    {
+        $('.m').css({'color':'orange'})
+        $('#btn').on("click", botao)
+    
+    function botao(){
+        $('.a').css({'color':'red'})
+        $('#btn').on("click", botao)
+    
+    function botao(){
+        $('.r').css({'color':'purple'})
+        $('#btn').on("click", botao)
+    
+    function botao(){
+        $('.l').css({'color':'green'})
+        $('#btn').on("click", botao)
+    
+    function botao(){
+        $('.d').css({'color':'blue'})
+       
+    }
+}
+    }
+}
+    }
+    </script>
+</body>
+</html>
